@@ -47,6 +47,7 @@ public class usuarios extends javax.swing.JFrame {
         jLabelCd = new javax.swing.JLabel();
         jLabelTel = new javax.swing.JLabel();
         jLabelPuesto = new javax.swing.JLabel();
+        jLabelFoto = new javax.swing.JLabel();
         jTextUser = new javax.swing.JTextField();
         jTextNombre = new javax.swing.JTextField();
         jTextApe = new javax.swing.JTextField();
@@ -89,6 +90,10 @@ public class usuarios extends javax.swing.JFrame {
         jLabelPuesto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelPuesto.setText("Puesto: ");
         getContentPane().add(jLabelPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 70, -1));
+
+        jLabelFoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/llama.png"))); // NOI18N
+        jLabelFoto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED, null, java.awt.Color.white, null, null));
+        getContentPane().add(jLabelFoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 70, 200, 210));
 
         jTextUser.setEditable(false);
         jTextUser.setBackground(new java.awt.Color(204, 204, 204));
@@ -402,6 +407,7 @@ public class usuarios extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelAp;
     private javax.swing.JLabel jLabelCd;
     private javax.swing.JLabel jLabelFondo;
+    private javax.swing.JLabel jLabelFoto;
     private javax.swing.JLabel jLabelPuesto;
     private javax.swing.JLabel jLabelTel;
     private javax.swing.JLabel jLabelUser;
