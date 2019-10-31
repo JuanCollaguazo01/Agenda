@@ -189,8 +189,8 @@ public class ConsultasUser extends javax.swing.JFrame {
         getContentPane().add(cancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 100, -1));
 
         empresa.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
-        empresa.setText("TecnoPerformance");
-        getContentPane().add(empresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 200, 30));
+        empresa.setText("Telefonos");
+        getContentPane().add(empresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 200, 30));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("No. Usuario: ");
@@ -239,7 +239,7 @@ public class ConsultasUser extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 380, -1, -1));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 380, -1, -1));
 
         jLabelfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo2.jpg"))); // NOI18N
         getContentPane().add(jLabelfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 420));

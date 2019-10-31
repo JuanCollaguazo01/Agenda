@@ -188,8 +188,8 @@ public class usuarios extends javax.swing.JFrame {
         getContentPane().add(jButtonSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 90, -1));
 
         empresa.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
-        empresa.setText("TecnoPerformance");
-        getContentPane().add(empresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, 180, 40));
+        empresa.setText("Registro");
+        getContentPane().add(empresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 180, 40));
 
         jLabelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo2.jpg"))); // NOI18N
         getContentPane().add(jLabelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 620, 310));
