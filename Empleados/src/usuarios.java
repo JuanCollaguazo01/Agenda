@@ -47,7 +47,6 @@ public class usuarios extends javax.swing.JFrame {
         jLabelCd = new javax.swing.JLabel();
         jLabelTel = new javax.swing.JLabel();
         jLabelPuesto = new javax.swing.JLabel();
-        jLabelFoto = new javax.swing.JLabel();
         jTextUser = new javax.swing.JTextField();
         jTextNombre = new javax.swing.JTextField();
         jTextApe = new javax.swing.JTextField();
@@ -59,6 +58,7 @@ public class usuarios extends javax.swing.JFrame {
         empresa = new javax.swing.JLabel();
         jLabelFondo = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
+        jButton2 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         tabla = new javax.swing.JMenuItem();
@@ -89,10 +89,6 @@ public class usuarios extends javax.swing.JFrame {
         jLabelPuesto.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabelPuesto.setText("Puesto: ");
         getContentPane().add(jLabelPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 70, -1));
-
-        jLabelFoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/button.png"))); // NOI18N
-        jLabelFoto.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED, null, java.awt.Color.white, null, null));
-        getContentPane().add(jLabelFoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 260, 230));
 
         jTextUser.setEditable(false);
         jTextUser.setBackground(new java.awt.Color(204, 204, 204));
@@ -191,8 +187,17 @@ public class usuarios extends javax.swing.JFrame {
         getContentPane().add(empresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, 180, 40));
 
         jLabelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo2.jpg"))); // NOI18N
-        getContentPane().add(jLabelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 620, 380));
+        getContentPane().add(jLabelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 620, 310));
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, -1, -1));
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton2.setText("Numeros");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, 100, 30));
 
         jMenu1.setText("Archivo");
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
@@ -348,6 +353,12 @@ public class usuarios extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu1ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        ConsultasUser ven = new ConsultasUser();
+        ven.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -385,12 +396,12 @@ public class usuarios extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel empresa;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButtonAcept;
     private javax.swing.JButton jButtonSalida;
     private javax.swing.JLabel jLabelAp;
     private javax.swing.JLabel jLabelCd;
     private javax.swing.JLabel jLabelFondo;
-    private javax.swing.JLabel jLabelFoto;
     private javax.swing.JLabel jLabelPuesto;
     private javax.swing.JLabel jLabelTel;
     private javax.swing.JLabel jLabelUser;
